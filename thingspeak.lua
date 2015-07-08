@@ -3,7 +3,6 @@ wifi.sta.config("ssid","senhadarede")
 
 function sendData()
 
-print("Reading data from thingspeak.com")
 conn=net.createConnection(net.TCP, 0) 
 conn:on("receive", function(conn, payload) print(payload) end)
 conn:connect(80,'184.106.153.149') 
