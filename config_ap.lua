@@ -1,5 +1,5 @@
 wifi.setmode(wifi.STATION)
-wifi.sta.config("smart","redeiot123")
+wifi.sta.config("ssid","senha")
 dofile("tel.lua")
 tmr.alarm(0, 5000, 0, function()
 uart.write(0,"\n\r5,")
